@@ -1,16 +1,87 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    outline: solid 1px red;
 }
 
-.card{
-    width: 100%;
+:root{
+    --color-card: #f7f8fa;
+    
+    --color-fondoArc: linear-gradient(to bottom, rgba(140, 122, 122, 1) 0%, rgba(175, 135, 124, 1) 65%, rgb(179, 125, 136) 100%);
 }
 
-.card__figure{
-    width: 100%;
+body{
+    background-color:black;
+    background-image: linear-gradient(to right,#a39d99, #6b5b59, #3d2127);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
-    filter: drop-shadow(2px 2px 10px #000);
+    width: 100%;
+    filter: drop-shadow(2px 2px 5px #000);
 }
+.card{
+    width: 320px;
+    margin: 100px auto;
+    background-color: var(--color-card);
+    border-radius: 1rem;
+    box-shadow: 0 0 16px -6px #0000005a;
+    position: relative;
+}
+
+.card__figure{
+   
+    height: 300px;
+    background: var(--color-fondoArc);
+    border-Top-left-radius: 1rem;
+    border-Top-right-radius: 1rem;
+   
+}
+
+.card__character{
+    position: relative;
+    bottom: 80px;
+    right: 60px;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+}
+
+.card__text{
+    text-align: center;
+    padding: 1rem;
+    margin: 20px auto;
+    
+}
+
+.text__level{
+    font-size: .9rem;
+}
+
+.card__text .paragraph{
+    margin-top: 1.5rem;
+}
+
+.card__stats{
+    position: relative;
+    margin-top: 10px;
+    bottom: 0;
+    border-top: 2px solid #c97b1c;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius:1rem ;
+    background-color: #e95283;
+    text-align: center;
+
+}
+
+.items{
+    display: inline-block;
+    width: 32.2%;
+    padding: 1rem 1.5625rem;
+    border-right: 2px solid 2px solid #da3b70;
+    color: #fff;
+
+}
+
