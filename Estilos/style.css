@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    outline: solid 1px red;
+    
 }
 
 :root{
@@ -80,8 +80,11 @@ img{
     display: inline-block;
     width: 32.2%;
     padding: 1rem 1.5625rem;
-    border-right: 2px solid 2px solid #da3b70;
+    border-right: 2px solid #da3b70;
     color: #fff;
 
+}
+.items:last-child {
+    border-right: none;
 }
 
